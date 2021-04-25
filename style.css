@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    background-size: cover;
+}
+#disk{
+    width: 100px;
+    height: 100px;
+    border-radius: 360px;
+}
+.disk1{
+    float: left;
+}
+.disk2{
+    float: right;
+}
+#volume{
+    float: right;
+    margin: 20px;
+}
+#speed{
+    float: left;
+    margin: 20px;
+}
+#header{
+    width: 100%;
+    margin: 0;
+}
+#note{
+    color: black;
+}
+#canvas{
+    border: solid white 2px;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 10px;
+}
