@@ -20,15 +20,15 @@ function setup(){
 function modelLoaded(){
     console.log("Model Loaded!");
 }
-function gotPoses(result){
-    console.log(result);
-    if (result.length > 0){
-        leftWristX = result[0].pose.leftWrist.x;
-        leftWristY = result[0].pose.leftWrist.y;
+function gotPoses(results){
+    console.log(results);
+    if (results.length > 0){
+        leftWristX = results[0].pose.leftWrist.x;
+        leftWristY = results[0].pose.leftWrist.y;
         console.log("leftWristX:"+leftWristX+" leftWristY:"+leftWristY);
         
-        rightWristX = result[0].pose.rightWrist.x;
-        rightWristY = result[0].pose.rightWrist.y;
+        rightWristX = results[0].pose.rightWrist.x;
+        rightWristY = results[0].pose.rightWrist.y;
         console.log("rightWristX:"+rightWristX+" rightWristY:"+rightWristY);
     }
 }
