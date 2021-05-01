@@ -9,7 +9,7 @@ function preload(){
 }
 
 function setup(){
-    canvas = createCanvas(300,300);
+    canvas = createCanvas(600,600);
     
     video = createCapture(VIDEO);
     video.hide();
@@ -34,7 +34,7 @@ function gotPoses(results){
 }
 
 function draw(){
-    image(video, 0, 0, 300, 300);
+    image(video, 0, 0, 600, 600);
     
     fill("#F50000");
     stroke("#F50000");
