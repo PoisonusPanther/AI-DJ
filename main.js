@@ -1,4 +1,8 @@
 song = "";
+leftWristX = 0;
+leftWristY = 0;
+rightWristX = 0;
+rightWristY = 0;
 
 function preload(){
     song = loadSound("music.mp3");
@@ -16,7 +20,17 @@ function setup(){
 function modelLoaded(){
     console.log("Model Loaded!");
 }
-function gotPoses(error, result){}
+function gotPoses(result){
+    console.log(result);
+    if (result.length > 0){
+        leftWristX = result[0].pose.leftWrist.x;
+        leftWristY = result[0].pose.leftWrist.y;
+        console.log("leftWristX:"+leftWristX+" leftWristY:"+leftWristY);
+        
+        rightWristX = result[0].pose.rightWrist.x;
+        rightWristY = result[0].pose.rightWrist.y;
+        console.log("rightWristX:"+rightWristX+" rightWristY:"+rightWristY);
+}
 
 function draw(){
     image(video, 0, 0, 300, 300);
