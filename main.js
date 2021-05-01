@@ -30,6 +30,7 @@ function gotPoses(result){
         rightWristX = result[0].pose.rightWrist.x;
         rightWristY = result[0].pose.rightWrist.y;
         console.log("rightWristX:"+rightWristX+" rightWristY:"+rightWristY);
+    }
 }
 
 function draw(){
